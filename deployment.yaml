@@ -16,9 +16,11 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: 192.168.1.81:5000/justme/myweb:1
+      - image: alishaukat718/demo:tagversion
         imagePullPolicy: Always
         name: myweb
+        ports:
+        - containerPort: 80
 
 ---
 apiVersion: v1
